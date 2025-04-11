@@ -12,7 +12,7 @@ export const Hero = () => {
           className="object-cover object-center"
         />
       </div>
-      <div className="bg-foreground/50 absolute top-0 left-0 size-full p-4 md:p-8 xl:bg-none">
+      <div className="bg-foreground/50 absolute top-0 left-0 size-full p-4 md:p-8 xl:bg-transparent">
         <div className="wrapper z-10 flex h-full py-6 md:py-8">
           <div className="flex h-full w-full flex-col justify-end gap-4 md:gap-8 xl:max-w-2/5 xl:justify-center">
             <HeroBadge />

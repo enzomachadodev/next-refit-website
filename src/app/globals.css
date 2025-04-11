@@ -42,6 +42,24 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 :root {
@@ -157,6 +175,10 @@
     @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0;
   }
 
+  .section-container {
+    @apply py-28 xl:py-36;
+  }
+
   .wrapper {
     @apply container mx-auto px-5 sm:px-10;
   }
@@ -165,7 +187,23 @@
     @apply scroll-m-20 font-sans text-4xl font-medium tracking-tight md:text-5xl xl:text-6xl;
   }
 
+  .heading-2 {
+    @apply scroll-m-20 text-4xl font-medium tracking-tight first:mt-0 lg:text-5xl xl:text-6xl;
+  }
+
   .paragraph-1 {
     @apply text-xl leading-7 font-light xl:text-2xl;
+  }
+}
+
+/* 
+  ---break--- */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
