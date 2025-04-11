@@ -17,14 +17,15 @@ export const Hero = () => {
           <div className="flex h-full w-full flex-col justify-end gap-4 md:gap-8 xl:max-w-2/5 xl:justify-center">
             <HeroBadge />
             <h2 className="heading-1">
-              Your trusted partner for quality home improvement
+              Transforme Seu Espaço com Projetos que Inspiram
             </h2>
             <p className="paragraph-1 text-muted">
-              Refit delivers expert home improvements, creating beautiful and
-              functional spaces with quality craftsmanship.
+              Na Refit, criamos ambientes únicos que combinam funcionalidade,
+              beleza e seu estilo pessoal. Comece hoje mesmo a realizar o lar
+              dos seus sonhos!
             </p>
             <Button className="w-fit" variant="secondary" size="lg">
-              Work with us
+              Entre em Contato
             </Button>
           </div>
         </div>

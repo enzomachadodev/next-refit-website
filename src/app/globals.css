@@ -141,12 +141,12 @@
   body {
     @apply bg-background text-foreground overflow-x-hidden font-sans antialiased;
   }
-  /* 
+
   @supports (font: -apple-system-body) and (-webkit-appearance: none) {
     [data-wrapper] {
       @apply min-[1800px]:border-t;
     }
-  } */
+  }
 
   ::-webkit-scrollbar {
     width: 5px;

@@ -14,12 +14,19 @@ export const SectionTitle = ({
   className,
 }: SectionTitleProps) => {
   return (
-    <div className={cn("flex flex-col items-center text-center", className)}>
+    <div
+      className={cn(
+        "mx-auto flex max-w-3xl flex-col items-center text-center",
+        className,
+      )}
+    >
       <div className="bg-foreground mb-4 rounded-full px-2.5 py-0.5">
         <h2 className="font-base text-background">{eyebrow}</h2>
       </div>
       <h3 className="heading-2">{title}</h3>
-      {description && <p className="paragraph-1">{description}</p>}
+      {description && (
+        <p className="paragraph-1 text-foreground/80 mt-4">{description}</p>
+      )}
     </div>
   );
 };
