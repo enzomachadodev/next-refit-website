@@ -71,7 +71,7 @@ export const ServicesAccordion = () => {
         className="w-full xl:max-w-1/2"
       >
         {servicesArray.map(({ icon, title, description }, i) => (
-          <AccordionItem value={`item-${i + 1}`}>
+          <AccordionItem key={i} value={`item-${i + 1}`}>
             <AccordionTrigger className="py-6">
               <div className="flex items-center gap-6 text-base">
                 <Image
