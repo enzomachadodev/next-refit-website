@@ -188,11 +188,23 @@
   }
 
   .heading-2 {
-    @apply scroll-m-20 text-4xl font-medium tracking-tight first:mt-0 lg:text-5xl xl:text-6xl;
+    @apply scroll-m-20 text-4xl font-medium tracking-tight whitespace-pre-line first:mt-0 lg:text-5xl xl:text-6xl;
+  }
+
+  .heading-3 {
+    @apply scroll-m-20 text-3xl font-medium tracking-tight whitespace-pre-line first:mt-0 lg:text-4xl xl:text-5xl;
   }
 
   .paragraph-1 {
     @apply text-xl leading-7 font-light xl:text-2xl;
+  }
+
+  .paragraph-2 {
+    @apply text-lg leading-7 font-light xl:text-xl;
+  }
+
+  .paragraph-3 {
+    @apply text-lg leading-7 font-light;
   }
 }
 
