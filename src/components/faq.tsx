@@ -1,4 +1,10 @@
 import { SectionTitle } from "./section-title";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 const questions = [
   {
@@ -36,12 +42,30 @@ const questions = [
 export const Faq = () => {
   return (
     <section id="faq" className="section-container">
-      <div className="wrapper flex flex-col items-center">
+      <div className="wrapper flex flex-col items-center gap-28">
         <SectionTitle
           eyebrow="FAQs"
           title="Dúvidas Frequentes"
           description="Tudo o que você precisa saber antes de começar seu projeto com a Refit. Ainda tem perguntas? Fale com a gente!"
         />
+        <div className="w-full max-w-screen-md">
+          <Accordion type="single" className="w-full space-y-5">
+            {questions.map(({ question, answer }, i) => (
+              <AccordionItem
+                key={i}
+                value={`item-${i + 1}`}
+                className="border-muted-foreground/50 rounded-xl border"
+              >
+                <AccordionTrigger className="items-center p-5">
+                  <span className="text-lg">{question}</span>
+                </AccordionTrigger>
+                <AccordionContent className="px-5 text-lg font-light">
+                  {answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
