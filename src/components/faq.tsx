@@ -44,13 +44,16 @@ const questions = [
 export const Faq = () => {
   return (
     <section id="duvidas-frequentes" className="section-container">
-      <div className="wrapper flex flex-col items-center gap-14">
-        <SectionTitle
-          eyebrow="FAQs"
-          title="Dúvidas Frequentes"
-          description="Tudo o que você precisa saber antes de começar seu projeto com a Refit. Ainda tem perguntas? Fale com a gente!"
-        />
-        <CTAButton href="#contato" />
+      <div className="wrapper relative flex flex-col items-center gap-14 xl:flex-row xl:items-start">
+        <div className="top-0 flex flex-col items-center gap-14 xl:sticky xl:top-24 xl:max-w-[400px] xl:items-start xl:gap-8">
+          <SectionTitle
+            eyebrow="FAQs"
+            title="Dúvidas Frequentes"
+            description="Ainda tem perguntas? Fale com a gente!"
+            className="xl:items-start xl:text-start"
+          />
+          <CTAButton href="#contato" />
+        </div>
         <div className="w-full max-w-screen-md">
           <Accordion type="single" className="w-full space-y-5">
             {questions.map(({ question, answer }, i) => (
@@ -59,8 +62,8 @@ export const Faq = () => {
                 value={`item-${i + 1}`}
                 className="border-muted-foreground/50 rounded-xl border"
               >
-                <AccordionTrigger className="items-center p-5">
-                  <span className="text-lg">{question}</span>
+                <AccordionTrigger className="items-center p-5 xl:p-6">
+                  <span className="text-lg xl:text-xl">{question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="px-5 text-lg font-light">
                   {answer}

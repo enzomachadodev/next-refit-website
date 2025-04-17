@@ -32,7 +32,7 @@ export const About = () => {
         </p>
       </div>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-        <Marquee pauseOnHover className="[--duration:50s] md:[--gap:2rem]">
+        <Marquee className="[--duration:50s] md:[--gap:2rem]">
           {images.map((img, i) => (
             <div
               key={i}

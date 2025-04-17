@@ -82,7 +82,7 @@ const ProjectCard = ({
     <div
       className={cn(
         "sticky top-8 flex flex-col gap-8 rounded-2xl p-5 md:p-8 lg:flex-row-reverse",
-        `z-[${index + 1}]`,
+        `z-[${index}]`,
         isEven ? "bg-muted text-foreground" : "bg-foreground text-muted",
       )}
     >
