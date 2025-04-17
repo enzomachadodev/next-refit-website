@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { CTAButton } from "./cta-button";
 
 export const Hero = () => {
   return (
@@ -24,9 +24,7 @@ export const Hero = () => {
               beleza e seu estilo pessoal. Comece hoje mesmo a realizar o lar
               dos seus sonhos!
             </p>
-            <Button className="w-fit" variant="secondary" size="lg">
-              Entre em Contato
-            </Button>
+            <CTAButton href="#contato" className="dark" />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { Button } from "./ui/button";
+import { CTAButton } from "./cta-button";
 
 const questions = [
   {
@@ -50,9 +50,7 @@ export const Faq = () => {
           title="Dúvidas Frequentes"
           description="Tudo o que você precisa saber antes de começar seu projeto com a Refit. Ainda tem perguntas? Fale com a gente!"
         />
-        <Button variant="secondary" size="lg">
-          Entre em Contato
-        </Button>
+        <CTAButton href="#contato" />
         <div className="w-full max-w-screen-md">
           <Accordion type="single" className="w-full space-y-5">
             {questions.map(({ question, answer }, i) => (

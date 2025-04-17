@@ -1,13 +1,4 @@
-import {
-  Send,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Sun,
-  Moon,
-} from "lucide-react";
-import React from "react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Tooltip,
@@ -15,6 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { navLinks } from "@/lib/data";
 
 export const Footer = () => {
   return (
@@ -30,36 +22,15 @@ export const Footer = () => {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Navegação</h3>
             <nav className="space-y-2 text-sm">
-              <a
-                href="#"
-                className="hover:text-primary block transition-colors"
-              >
-                Início
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary block transition-colors"
-              >
-                Sobre
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary block transition-colors"
-              >
-                Serviços
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary block transition-colors"
-              >
-                Portfólio
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary block transition-colors"
-              >
-                Contato
-              </a>
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="hover:text-primary block transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
             </nav>
           </div>
           <div>
