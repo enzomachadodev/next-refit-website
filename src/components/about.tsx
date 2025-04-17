@@ -14,7 +14,7 @@ const images = [
 
 export const About = () => {
   return (
-    <section id="about" className="section-container flex flex-col gap-28">
+    <section id="sobre" className="section-container flex flex-col gap-28">
       <div className="wrapper flex flex-col gap-8 xl:flex-row xl:items-end xl:gap-48">
         <SectionTitle
           eyebrow="Quem Somos"

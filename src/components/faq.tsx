@@ -43,7 +43,7 @@ const questions = [
 
 export const Faq = () => {
   return (
-    <section id="faq" className="section-container">
+    <section id="duvidas-frequentes" className="section-container">
       <div className="wrapper flex flex-col items-center gap-14">
         <SectionTitle
           eyebrow="FAQs"
