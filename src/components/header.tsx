@@ -28,14 +28,14 @@ export const Header = () => {
         "text-background border-muted/10 fixed top-0 left-0 z-50 w-full transition-all duration-300",
         isScrolled
           ? "dark bg-foreground/80 border-b py-6 backdrop-blur-md"
-          : "bg-transparent py-12",
+          : "bg-transparent py-12 pl-4 lg:pl-0",
       )}
     >
       <nav className="wrapper flex items-center justify-between">
         <h1 className="text-4xl font-semibold">
           <Link href="/">Refit</Link>
         </h1>
-        <ul className="flex items-center gap-12 text-xl font-medium">
+        <ul className="hidden items-center gap-12 text-xl font-medium lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link

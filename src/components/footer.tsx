@@ -7,6 +7,12 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { navLinks } from "@/lib/data";
+import {
+  SiFacebook,
+  SiInstagram,
+  SiWhatsapp,
+  SiX,
+} from "@icons-pack/react-simple-icons";
 
 export const Footer = () => {
   return (
@@ -36,9 +42,9 @@ export const Footer = () => {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Entre em Contato</h3>
             <address className="space-y-2 text-sm not-italic">
-              <p>123 Rua da Consolação</p>
-              <p>São Paulo, SP - 01153 000</p>
-              <p>Telefone: +55 (31) 99876 - 5432</p>
+              <p>Rua Oscar Freire, 984</p>
+              <p>Jardim Paulista, São Paulo - SP</p>
+              <p>Telefone: +55 (11) 98765 - 4321</p>
               <p>Email: contato@refit.com.br</p>
             </address>
           </div>
@@ -53,7 +59,7 @@ export const Footer = () => {
                       size="icon"
                       className="dark rounded-full"
                     >
-                      <Facebook className="h-4 w-4" />
+                      <SiFacebook className="h-4 w-4" />
                       <span className="sr-only">Facebook</span>
                     </Button>
                   </TooltipTrigger>
@@ -70,7 +76,7 @@ export const Footer = () => {
                       size="icon"
                       className="dark rounded-full"
                     >
-                      <Twitter className="h-4 w-4" />
+                      <SiX className="h-4 w-4" />
                       <span className="sr-only">Twitter</span>
                     </Button>
                   </TooltipTrigger>
@@ -87,7 +93,7 @@ export const Footer = () => {
                       size="icon"
                       className="dark rounded-full"
                     >
-                      <Instagram className="h-4 w-4" />
+                      <SiInstagram className="h-4 w-4" />
                       <span className="sr-only">Instagram</span>
                     </Button>
                   </TooltipTrigger>
@@ -104,12 +110,12 @@ export const Footer = () => {
                       size="icon"
                       className="dark rounded-full"
                     >
-                      <Linkedin className="h-4 w-4" />
-                      <span className="sr-only">LinkedIn</span>
+                      <SiWhatsapp className="h-4 w-4" />
+                      <span className="sr-only">Whatsapp</span>
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>LinkedIn</p>
+                    <p>Whatsapp</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
