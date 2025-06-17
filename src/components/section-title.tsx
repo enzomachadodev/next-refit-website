@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { TextAnimate } from "./ui/text-animate";
 
 interface SectionTitleProps {
   eyebrow: string;
@@ -16,16 +17,27 @@ export const SectionTitle = ({
   return (
     <div
       className={cn(
-        "mx-auto flex max-w-3xl flex-col items-center text-center",
+        "mx-auto flex flex-col items-center text-center",
         className,
       )}
     >
       <div className="bg-foreground mb-4 rounded-full px-2.5 py-0.5">
         <h2 className="font-base text-background">{eyebrow}</h2>
       </div>
-      <h3 className="heading-2">{title}</h3>
+      <TextAnimate
+        as="h3"
+        animation="blurInUp"
+        by="word"
+        className="heading-2 max-w-3xl"
+        duration={0.4}
+      >
+        {title}
+      </TextAnimate>
+
       {description && (
-        <p className="paragraph-1 text-foreground/80 mt-4">{description}</p>
+        <p className="paragraph-1 text-foreground/80 mt-4 max-w-2xl">
+          {description}
+        </p>
       )}
     </div>
   );

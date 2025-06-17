@@ -196,15 +196,11 @@
   }
 
   .paragraph-1 {
-    @apply text-xl leading-7 font-light xl:text-2xl;
+    @apply leading-7 font-light xl:text-xl;
   }
 
   .paragraph-2 {
-    @apply text-lg leading-7 font-light xl:text-xl;
-  }
-
-  .paragraph-3 {
-    @apply text-lg leading-7 font-light;
+    @apply leading-7 font-light xl:text-lg;
   }
 }
 

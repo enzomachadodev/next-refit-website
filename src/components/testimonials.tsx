@@ -14,32 +14,32 @@ const testimonials: Review[] = [
   {
     text: "Contratei a Refit para reformar minha sala, e o resultado foi além do esperado. Eles entenderam exatamente o que eu queria e entregaram tudo no prazo. Superprofissionais!",
     name: "João M., Curitiba",
-    picture: "/images/testimonial-1.jpg",
+    picture: "/images/testimonial-1.webp",
   },
   {
     text: "Minha varanda nunca foi tão usada! A Refit transformou um espaço simples em um cantinho perfeito para relaxar. Adorei o cuidado com os detalhes.",
     name: "Ana L., Salvador",
-    picture: "/images/testimonial-5.jpg",
+    picture: "/images/testimonial-5.webp",
   },
   {
     text: "Fizemos uma ampliação com a Refit, e o processo foi tranquilo do começo ao fim. O time é atencioso e o projeto ficou incrível!",
     name: "Pedro T., Porto Alegre",
-    picture: "/images/testimonial-2.png",
+    picture: "/images/testimonial-2.webp",
   },
   {
     text: "A cozinha planejada que a Refit fez para nós é perfeita! Funcional, bonita e com acabamento impecável. Recomendo muito!",
     name: "Fernanda G., Florianópolis",
-    picture: "/images/testimonial-4.png",
+    picture: "/images/testimonial-4.webp",
   },
   {
     text: "A restauração da minha casa antiga foi um desafio, mas a Refit trouxe o charme de volta com um toque moderno. Não poderia estar mais satisfeito!",
     name: "Lucas B., Recife",
-    picture: "/images/testimonial-3.png",
+    picture: "/images/testimonial-3.webp",
   },
   {
     text: "O banheiro renovado mudou a energia do nosso apartamento. A Refit foi superparceira e entregou tudo com muita qualidade.",
     name: "Sofia C., Brasília",
-    picture: "/images/testimonial-6.png",
+    picture: "/images/testimonial-6.webp",
   },
 ];
 

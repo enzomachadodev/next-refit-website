@@ -1,6 +1,5 @@
 import React from "react";
 import { SectionTitle } from "./section-title";
-import { div } from "motion/react-client";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -13,41 +12,40 @@ interface Project {
   name: string;
   picture: string;
 }
-[];
 
 const projects: Project[] = [
   {
     title: "Reforma de Cozinha Moderna",
     description:
       "Uma família de São Paulo queria uma cozinha que fosse o coração da casa. Desenvolvemos um projeto com ilha central, armários planejados em tons neutros e iluminação embutida. Integramos eletrodomésticos de última geração e criamos um espaço amplo para refeições em família. O resultado? Uma cozinha prática, elegante e perfeita para momentos inesquecíveis.",
-    image: "/images/kitchen-2.png",
+    image: "/images/kitchen-2.webp",
     tags: ["Cozinha", "4 semanas"],
     testimonial:
       "A Refit transformou nossa cozinha em um lugar que amamos estar! Cada detalhe foi pensado com cuidado, e o time foi superatencioso. Recomendo de olhos fechados!",
     name: "Mariana S.",
-    picture: "/images/mariana.png",
+    picture: "/images/mariana.webp",
   },
   {
     title: "Construção de Caminho Externo no Jardim",
     description:
       "Um casal do Rio de Janeiro queria um jardim mais funcional para receber amigos. Projetamos um caminho de pedras naturais que conecta a entrada ao espaço de convivência, com iluminação suave e paisagismo integrado. O projeto trouxe charme e praticidade ao quintal, valorizando ainda mais a área externa.",
-    image: "/images/garden.jpg",
+    image: "/images/garden.webp",
     tags: ["Obras Externas", "1 mês"],
     testimonial:
       "Nosso jardim ficou incrível! O caminho deu um toque especial, e agora adoramos receber amigos aqui. A Refit entregou tudo no prazo e com muita qualidade.",
     name: "Rafael P.",
-    picture: "/images/rafael.png",
+    picture: "/images/rafael.webp",
   },
   {
     title: "Renovação de Banheiro",
     description:
       "Um apartamento em Belo Horizonte precisava de um banheiro mais moderno e funcional. Substituímos revestimentos antigos por porcelanatos claros, instalamos um box elegante e criamos nichos embutidos para organização. O projeto trouxe sofisticação e praticidade ao dia a dia dos moradores.",
-    image: "/images/bathrooms.png",
+    image: "/images/bathrooms.webp",
     tags: ["Bathroom", "6 semanas"],
     testimonial:
       "O banheiro ficou exatamente como imaginávamos! A Refit captou nossa ideia e entregou um projeto impecável. Estamos muito felizes!",
     name: "Camila R.",
-    picture: "/images/camila.png",
+    picture: "/images/camila.webp",
   },
 ];
 

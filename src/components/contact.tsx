@@ -45,7 +45,7 @@ export const Contact = () => {
             <div className="bg-muted-foreground h-px w-full" />
             <div className="flex flex-col gap-5">
               <p className="font-semibold">Redes sociais</p>
-              <div className="mb-6 flex space-x-4">
+              <div className="mb-6 flex space-x-4 lg:mb-0">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -53,6 +53,7 @@ export const Contact = () => {
                         variant="outline"
                         size="icon"
                         className="dark rounded-full"
+                        aria-label="Acessar Facebook"
                       >
                         <SiFacebook className="h-4 w-4" />
                         <span className="sr-only">Facebook</span>
@@ -70,6 +71,7 @@ export const Contact = () => {
                         variant="outline"
                         size="icon"
                         className="dark rounded-full"
+                        aria-label="Acessar Twitter"
                       >
                         <SiX className="h-4 w-4" />
                         <span className="sr-only">Twitter</span>
@@ -87,6 +89,7 @@ export const Contact = () => {
                         variant="outline"
                         size="icon"
                         className="dark rounded-full"
+                        aria-label="Acessar Instagram"
                       >
                         <SiInstagram className="h-4 w-4" />
                         <span className="sr-only">Instagram</span>
@@ -104,6 +107,7 @@ export const Contact = () => {
                         variant="outline"
                         size="icon"
                         className="dark rounded-full"
+                        aria-label="Acessar WhatsApp"
                       >
                         <SiWhatsapp className="h-4 w-4" />
                         <span className="sr-only">Whatsapp</span>
@@ -117,7 +121,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-1 flex">
+          <div className="col-span-1 flex items-center">
             <ContactForm />
           </div>
         </div>

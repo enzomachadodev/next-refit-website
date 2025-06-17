@@ -4,12 +4,12 @@ import Image from "next/image";
 import { NumberTicker } from "./ui/number-ticker";
 
 const images = [
-  "/images/bathrooms.png",
-  "/images/corridor.png",
-  "/images/external.png",
-  "/images/house.png",
-  "/images/loft.png",
-  "/images/room.png",
+  "/images/bathrooms.webp",
+  "/images/corridor.webp",
+  "/images/external.webp",
+  "/images/house.webp",
+  "/images/loft.webp",
+  "/images/room.webp",
 ];
 
 export const About = () => {

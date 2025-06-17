@@ -59,6 +59,7 @@ export const CTAButton = ({
         className={commonClasses}
         onClick={onClick}
         target={target}
+        aria-label="Entre em contato"
       >
         {content}
       </Link>

@@ -1,4 +1,3 @@
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Tooltip,
@@ -58,6 +57,7 @@ export const Footer = () => {
                       variant="outline"
                       size="icon"
                       className="dark rounded-full"
+                      aria-label="Acessar Facebook"
                     >
                       <SiFacebook className="h-4 w-4" />
                       <span className="sr-only">Facebook</span>
@@ -75,6 +75,7 @@ export const Footer = () => {
                       variant="outline"
                       size="icon"
                       className="dark rounded-full"
+                      aria-label="Acessar Twitter"
                     >
                       <SiX className="h-4 w-4" />
                       <span className="sr-only">Twitter</span>
@@ -92,6 +93,7 @@ export const Footer = () => {
                       variant="outline"
                       size="icon"
                       className="dark rounded-full"
+                      aria-label="Acessar Instagram"
                     >
                       <SiInstagram className="h-4 w-4" />
                       <span className="sr-only">Instagram</span>
@@ -109,6 +111,7 @@ export const Footer = () => {
                       variant="outline"
                       size="icon"
                       className="dark rounded-full"
+                      aria-label="Acessar WhatsApp"
                     >
                       <SiWhatsapp className="h-4 w-4" />
                       <span className="sr-only">Whatsapp</span>

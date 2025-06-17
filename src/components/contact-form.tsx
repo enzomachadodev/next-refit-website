@@ -46,7 +46,7 @@ export const ContactForm = () => {
     },
   });
 
-  const handleSendMessage = async (data: ContactSchema) => {
+  const handleSendMessage = async () => {
     toast.success("Mensagem enviada com sucesso!", {
       duration: 3000,
       position: "top-center",
@@ -123,7 +123,7 @@ export const ContactForm = () => {
             <Button
               type="submit"
               className="h-14 w-full text-lg font-bold"
-              //isLoading={pendingCredentials}
+              aria-label="Enviar Formulário"
             >
               Enviar Mensagem
             </Button>

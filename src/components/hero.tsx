@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CTAButton } from "./cta-button";
+import { TextAnimate } from "./ui/text-animate";
 
 export const Hero = () => {
   return (
@@ -7,18 +8,28 @@ export const Hero = () => {
       <div className="relative w-full overflow-hidden rounded-xl xl:max-w-1/2">
         <Image
           alt="Hero Image"
-          src="/images/hero.png"
-          fill
-          className="object-cover object-center"
+          src="/images/hero.webp"
+          className="absolute size-full object-cover object-center"
+          sizes="(max-width: 1280px) 100vw, 50vw"
+          width={1000}
+          height={1000}
+          quality={80}
+          placeholder="blur"
+          blurDataURL="/images/hero.webp"
         />
       </div>
       <div className="bg-foreground/50 xl:from-foreground absolute top-0 left-0 size-full p-4 md:p-8 xl:bg-gradient-to-b xl:from-0% xl:to-transparent xl:to-11%">
         <div className="wrapper z-10 flex h-full py-6 md:py-8">
           <div className="flex h-full w-full flex-col justify-end gap-4 md:gap-8 xl:max-w-2/5 xl:justify-center">
             <HeroBadge />
-            <h2 className="heading-1">
+            <TextAnimate
+              animation="blurInUp"
+              duration={0.4}
+              className="heading-1"
+              by="word"
+            >
               Transforme Seu Espaço com Projetos que Inspiram
-            </h2>
+            </TextAnimate>
             <p className="paragraph-1 text-muted">
               Na Refit, criamos ambientes únicos que combinam funcionalidade,
               beleza e seu estilo pessoal. Comece hoje mesmo a realizar o lar

@@ -1,4 +1,3 @@
-import { section } from "motion/react-client";
 import { SectionTitle } from "./section-title";
 import {
   Accordion,

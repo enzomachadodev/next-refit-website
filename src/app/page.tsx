@@ -6,7 +6,7 @@ import { Portfolio } from "@/components/portfolio";
 import { Services } from "@/components/services";
 import { Testimonials } from "@/components/testimonials";
 
-export const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -19,4 +19,4 @@ export const Home = () => {
     </>
   );
 };
-export default Home;
+export default HomePage;
