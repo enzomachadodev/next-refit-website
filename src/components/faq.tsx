@@ -44,7 +44,7 @@ export const Faq = () => {
   return (
     <section id="duvidas-frequentes" className="section-container">
       <div className="wrapper relative flex flex-col items-center gap-14 xl:flex-row xl:items-start xl:justify-center">
-        <div className="top-0 flex flex-col items-center gap-14 xl:sticky xl:top-24 xl:max-w-[400px] xl:items-start xl:gap-8">
+        <div className="top-0 flex flex-col items-center gap-14 xl:top-24 xl:max-w-[400px] xl:items-start xl:gap-8">
           <SectionTitle
             eyebrow="FAQs"
             title="Dúvidas Frequentes"

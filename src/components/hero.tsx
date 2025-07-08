@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { CTAButton } from "./cta-button";
-import { TextAnimate } from "./ui/text-animate";
 
 export const Hero = () => {
   return (
@@ -22,14 +21,9 @@ export const Hero = () => {
         <div className="wrapper z-10 flex h-full py-6 md:py-8">
           <div className="flex h-full w-full flex-col justify-end gap-4 md:gap-8 xl:max-w-2/5 xl:justify-center">
             <HeroBadge />
-            <TextAnimate
-              animation="blurInUp"
-              duration={0.4}
-              className="heading-1"
-              by="word"
-            >
+            <h3 className="heading-1">
               Transforme Seu Espaço com Projetos que Inspiram
-            </TextAnimate>
+            </h3>
             <p className="paragraph-1 text-muted">
               Na Refit, criamos ambientes únicos que combinam funcionalidade,
               beleza e seu estilo pessoal. Comece hoje mesmo a realizar o lar
